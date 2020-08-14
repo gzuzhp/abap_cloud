@@ -16,8 +16,8 @@ annotate view zc_libros with
                     label           : 'Compradores',
                     type            : #LINEITEM_REFERENCE,
                     targetElement   : '_Clientes',
-                    position        : 30}],
-
+                    position        : 30}
+                    ],
   fieldGroup    : [{qualifier       : 'DetallesLibro',
                     position        : 10}]}
   IdLibro;

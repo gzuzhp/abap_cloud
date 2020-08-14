@@ -55,26 +55,26 @@ CLASS zcl_carga_biblioteca IMPLEMENTATION.
 ******** ZTB_CATEGO ********
     "fill internal table
     lt_clientes = VALUE #(
-    ( id_cliente = '005638984K' tipo_acceso = '1' nombre = 'Andrew' apellidos = 'Roberts' email = 'STEPHANIE.ROBERTS@EMAIL.COM' )
-    ( id_cliente = '049320909Q' tipo_acceso = '2' nombre = 'Natalie' apellidos = 'Clark' email = 'PETER.CLARK@EMAIL.COM' )
-    ( id_cliente = '049573865T' tipo_acceso = '1' nombre = 'Faith' apellidos = 'Black' email = 'DAN.BLACK@EMAIL.COM' )
-    ( id_cliente = '203947278B' tipo_acceso = '3' nombre = 'Carolyn' apellidos = 'Wright' email = 'ADRIAN.WRIGHT@EMAIL.COM' )
-    ( id_cliente = '234234231T' tipo_acceso = '5' nombre = 'Penelope' apellidos = 'King' email = 'CAROLINE.KING@EMAIL.COM' )
-    ( id_cliente = '239482309W' tipo_acceso = '5' nombre = 'Julian' apellidos = 'Underwood' email = 'DAN.UNDERWOOD@EMAIL.COM' )
-    ( id_cliente = '276594867J' tipo_acceso = '5' nombre = 'Olivia' apellidos = 'Allan' email = 'OWEN.ALLAN@EMAIL.COM' )
-    ( id_cliente = '283748858A' tipo_acceso = '5' nombre = 'Eric'  apellidos = 'Knox' email = 'LILY.KNOX@EMAIL.COM' )
-    ( id_cliente = '324726345S' tipo_acceso = '4' nombre = 'Vanessa' apellidos = 'Baker' email = 'SUE.BAKER@EMAIL.COM' )
-    ( id_cliente = '340958439D' tipo_acceso = '5' nombre = 'Michael' apellidos = 'Short' email = 'JASON.SHORT@EMAIL.COM' )
-    ( id_cliente = '345093450E' tipo_acceso = '3' nombre = 'Sue'   apellidos = 'Sanderson' email = 'JOAN.SANDERSON@EMAIL.COM' )
-    ( id_cliente = '345838534R' tipo_acceso = '5' nombre = 'Lily'  apellidos = 'Langdon' email = 'ANDREW.LANGDON@EMAIL.COM' )
-    ( id_cliente = '348947597P' tipo_acceso = '5' nombre = 'Lillian' apellidos = 'Davies' email = 'JULIAN.DAVIES@EMAIL.COM' )
-    ( id_cliente = '378458844M' tipo_acceso = '5' nombre = 'Joseph' apellidos = 'Smith' email = 'NATALIE.SMITH@EMAIL.COM' )
-    ( id_cliente = '423586845G' tipo_acceso = '5' nombre = 'Stephanie' apellidos = 'Quinn' email = 'LILLIAN.QUINN@EMAIL.COM' )
-    ( id_cliente = '430958433A' tipo_acceso = '2' nombre = 'Joan'  apellidos = 'Short' email = 'WENDY.SHORT@EMAIL.COM' )
-    ( id_cliente = '439853453C' tipo_acceso = '5' nombre = 'Wendy' apellidos = 'Newman' email = 'JOSEPH.NEWMAN@EMAIL.COM' )
-    ( id_cliente = '453532543O' tipo_acceso = '1' nombre = 'Neil'  apellidos = 'Wilson' email = 'VANESSA.WILSON@EMAIL.COM' )
-    ( id_cliente = '489632882D' tipo_acceso = '5' nombre = 'Sonia' apellidos = 'Welch' email = 'NEIL.WELCH@EMAIL.COM' )
-    ( id_cliente = '540867547H' tipo_acceso = '5' nombre = 'Adrian' apellidos = 'Young' email = 'PENELOPE.YOUNG@EMAIL.COM' ) ).
+    ( id_cliente = '005638984K' tipo_acceso = '1' nombre = 'Andrew' apellidos = 'Roberts' email = 'STEPHANIE.ROBERTS@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/11/24.2.png' )
+    ( id_cliente = '049320909Q' tipo_acceso = '2' nombre = 'Natalie' apellidos = 'Clark' email = 'PETER.CLARK@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '049573865T' tipo_acceso = '1' nombre = 'Faith' apellidos = 'Black' email = 'DAN.BLACK@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/11/24.2.png' )
+    ( id_cliente = '203947278B' tipo_acceso = '3' nombre = 'Carolyn' apellidos = 'Wright' email = 'ADRIAN.WRIGHT@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '234234231T' tipo_acceso = '5' nombre = 'Penelope' apellidos = 'King' email = 'CAROLINE.KING@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '239482309W' tipo_acceso = '5' nombre = 'Julian' apellidos = 'Underwood' email = 'DAN.UNDERWOOD@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/11/24.2.png' )
+    ( id_cliente = '276594867J' tipo_acceso = '5' nombre = 'Olivia' apellidos = 'Allan' email = 'OWEN.ALLAN@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '283748858A' tipo_acceso = '5' nombre = 'Eric'  apellidos = 'Knox' email = 'LILY.KNOX@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/11/24.2.png' )
+    ( id_cliente = '324726345S' tipo_acceso = '4' nombre = 'Vanessa' apellidos = 'Baker' email = 'SUE.BAKER@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '340958439D' tipo_acceso = '5' nombre = 'Michael' apellidos = 'Short' email = 'JASON.SHORT@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '345093450E' tipo_acceso = '3' nombre = 'Sue'   apellidos = 'Sanderson' email = 'JOAN.SANDERSON@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '345838534R' tipo_acceso = '5' nombre = 'Lily'  apellidos = 'Langdon' email = 'ANDREW.LANGDON@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '348947597P' tipo_acceso = '5' nombre = 'Lillian' apellidos = 'Davies' email = 'JULIAN.DAVIES@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '378458844M' tipo_acceso = '5' nombre = 'Joseph' apellidos = 'Smith' email = 'NATALIE.SMITH@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/11/24.2.png' )
+    ( id_cliente = '423586845G' tipo_acceso = '5' nombre = 'Stephanie' apellidos = 'Quinn' email = 'LILLIAN.QUINN@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '430958433A' tipo_acceso = '2' nombre = 'Joan'  apellidos = 'Short' email = 'WENDY.SHORT@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/11/24.2.png' )
+    ( id_cliente = '439853453C' tipo_acceso = '5' nombre = 'Wendy' apellidos = 'Newman' email = 'JOSEPH.NEWMAN@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '453532543O' tipo_acceso = '1' nombre = 'Neil'  apellidos = 'Wilson' email = 'VANESSA.WILSON@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '489632882D' tipo_acceso = '5' nombre = 'Sonia' apellidos = 'Welch' email = 'NEIL.WELCH@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/12/41.png' )
+    ( id_cliente = '540867547H' tipo_acceso = '5' nombre = 'Adrian' apellidos = 'Young' email = 'PENELOPE.YOUNG@EMAIL.COM' url = 'https://d4.logaligroup.com/wp-content/uploads/2019/11/24.2.png' ) ).
 
     "Delete possible entries; insert new entries
     DELETE FROM ztb_clientes.
@@ -119,7 +119,6 @@ CLASS zcl_carga_biblioteca IMPLEMENTATION.
     DELETE FROM ztb_clnts_lib.
 
     INSERT ztb_clnts_lib FROM TABLE @lt_clnts_lib.
-
 
 
 ******** ZTB_LIBROS ********
