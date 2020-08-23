@@ -9,7 +9,11 @@ CLASS zcl_carga_biblioteca DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_carga_biblioteca IMPLEMENTATION.
+
+
+CLASS ZCL_CARGA_BIBLIOTECA IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA: lt_acc_categ TYPE TABLE OF ztb_acc_categ,
@@ -197,5 +201,4 @@ CLASS zcl_carga_biblioteca IMPLEMENTATION.
     out->write(  'DONE!' ).
 
   ENDMETHOD.
-
 ENDCLASS.

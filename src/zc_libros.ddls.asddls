@@ -3,20 +3,14 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Libros'
-@Search.searchable: true
 @Metadata.allowExtensions: true
-@UI.headerInfo : { typeName      : 'Libro',
-                   typeNamePlural: 'Libros',
-                   title         : {type    : #STANDARD,
-                                    value   : 'Titulo'},
-                   description   : {type    : #STANDARD,
-                                    value   : 'Autor'},
-                   imageUrl      : 'Imagen'}
+@Search.searchable: true
 define view zc_libros
   as select from    ztb_libros   as libros
     inner join      ztb_catego   as catego on libros.bi_categ = catego.bi_categ
     left outer join zc_clnts_lib as ventas on libros.id_libro = ventas.id_libro
   association [0..*] to zc_clientes as _Clientes on $projection.IdLibro = _Clientes.IdLibro
+
 {
       //libros
   key libros.id_libro as IdLibro,
@@ -35,6 +29,10 @@ define view zc_libros
       when ventas.Ventas > 2 then 3
       else 0
       end             as Ventas,
+      case ventas.Ventas
+      when 0 then ''
+      else ''
+      end             as Text,
       @Semantics.currencyCode
       moneda          as Moneda,
       formato         as Formato,

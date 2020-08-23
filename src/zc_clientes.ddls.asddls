@@ -4,13 +4,6 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Clientes'
 @Metadata.allowExtensions: true
-@UI.headerInfo : { typeName      : 'Cliente',
-                   title         : {type    : #STANDARD,
-                                    value   : 'NombreCompleto'},
-                   description   : {type    : #STANDARD,
-                                    value   : 'IdCliente'},
-                   imageUrl      : 'Imagen'
-                   }
 define view zc_clientes
   as select from ztb_clientes  as clientes
     inner join   ztb_clnts_lib as clnts on clnts.id_cliente = clientes.id_cliente
