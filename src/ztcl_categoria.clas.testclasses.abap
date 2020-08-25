@@ -46,17 +46,36 @@ CLASS ltc_ZC_CATEGORIAS IMPLEMENTATION.
 
   METHOD main.
     prepare_testdata_set( ).
-    SELECT * FROM zc_categorias WHERE categoria = '3' INTO TABLE @act_results.
+    SELECT * FROM zc_categorias WHERE categoria = 'A' INTO TABLE @act_results.
 
     cl_abap_unit_assert=>assert_subrc(
       EXPORTING
         exp              = 0
         act              = sy-subrc
         msg              = 'No fue posible asignar valores a la tabla interna'
-        level            = if_abap_unit_constant=>severity-high
-        quit             = if_abap_unit_constant=>quit-test ).
+        level            = if_abap_unit_constant=>severity-low
+        quit             = if_abap_unit_constant=>quit-no ).
+
+*    CLEAR act_results[].
+
+    cl_abap_unit_assert=>assert_not_initial(
+      EXPORTING
+        act              = act_results
+        msg              = 'La tabla está vacía'
+        level            = if_abap_unit_constant=>severity-low
+        quit             = if_abap_unit_constant=>quit-no ).
+
+    SELECT * FROM zc_categorias WHERE categoria = 'A' INTO TABLE @DATA(act_results1).
+
+    cl_abap_unit_assert=>assert_equals( act     = act_results
+                                        exp     = act_results1
+                                        msg     = 'Las estructuras no coinciden'
+                                        level   = if_abap_unit_constant=>severity-medium
+                                        quit    = if_abap_unit_constant=>quit-no ).
 
   ENDMETHOD.
+
+
 
   METHOD prepare_testdata_set.
 
